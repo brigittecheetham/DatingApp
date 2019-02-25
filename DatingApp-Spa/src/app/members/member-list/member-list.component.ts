@@ -17,8 +17,9 @@ export class MemberListComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit() {
-    // this.loadUsers();
-    this.route.data.subscribe(data => this.users = data['users']);
+    this.loadUsers();
+    // to research, commented out for now to complete unit test
+    // this.route.data.subscribe(data => this.users = data['users']);
   }
 
   loadUsers() {
